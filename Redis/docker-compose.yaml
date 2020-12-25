@@ -1,0 +1,22 @@
+version: "3.4"
+
+services: 
+  redis:
+    image: redis:4.0-alpine
+    container_name: Redis-Simulator
+    ports:
+    - "127.0.0.1:6379:6379"
+    # expose:
+    #   - "6379"
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+    - ./redis.conf:/usr/local/etc/redis/redis.conf
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 6M
+        reservations:
+          cpus: '0.50'
+          memory: 6M

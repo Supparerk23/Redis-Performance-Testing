@@ -1,0 +1,14 @@
+{
+  "name": "redis-performance-testing",
+  "version": "1.0.0",
+  "description": "For Testing Redis",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Supparerk23",
+  "homepage": "https://github.com/Supparerk23/Redis-Performance-Testing#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "redis": "^3.0.2"
+  }
+}
